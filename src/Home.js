@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Login from './Login';
 import Search from './Search';
 import Album from './Album';
@@ -12,11 +12,11 @@ class Home extends Component {
     return (
       <div>
         <h1>Minha homepage</h1>
-        <Login />
-        <Search />
-        <Album />
-        <Favorites />
-        <Profile />
+        <Route path="/" component={ Login } />
+        <Route path="/search" component={ Search } />
+        <Route path="/album/:id" component={ Album } />
+        <Route path="/favorites" component={ Favorites } />
+        <Route path="/profile" component={ Profile } />
         <NotFound />
       </div>
     );
