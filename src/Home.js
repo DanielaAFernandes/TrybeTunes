@@ -12,12 +12,12 @@ class Home extends Component {
     return (
       <div>
         <h1>Minha homepage</h1>
-        <Route path="/" component={ Login } />
+        <Route exact path="/" component={ Login } />
         <Route path="/search" component={ Search } />
         <Route path="/album/:id" component={ Album } />
         <Route path="/favorites" component={ Favorites } />
         <Route path="/profile" component={ Profile } />
-        <NotFound />
+        <Route path="/" component={ NotFound } />
       </div>
     );
   }
