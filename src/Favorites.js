@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-// import { Route } from 'react-router-dom';
+import Header from './Header';
 
 class Favorites extends Component {
   render() {
     return (
-      <div data-testid="page-favorites" />
+      <div data-testid="page-favorites">
+        <Header />
+      </div>
     );
   }
 }
