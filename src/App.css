@@ -18,7 +18,7 @@
 body {
   background-color: #c1dbb3;
   width: 400px;
-};
+}
 
 .input-artist {
   border: solid black 2px;
@@ -29,9 +29,9 @@ body {
 }
 
 .label {
-    color: black;
-    font-weight: 800;
-    margin-left: 10px;
+  color: black;
+  font-weight: 800;
+  margin-left: 10px;
 }
 
 .loading {
@@ -46,10 +46,10 @@ body {
   flex-direction: column;
   font-size: 20px;
   justify-content: space-between;
-  margin-left: 10px;
   margin-bottom: 10px;
-  padding-left: 10px;
+  margin-left: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
   text-decoration: none;
   width: 250px;
 }
@@ -75,4 +75,4 @@ body {
   color: #fe5d26;
   text-align: center;
   width: 400px;
-};
+}
