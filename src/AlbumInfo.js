@@ -6,7 +6,7 @@ class AlbumInfo extends Component {
   render() {
     const { album } = this.props;
     const { artistName, collectionId, collectionName,
-      artworkUrl100, trackCount } = album;
+      artworkUrl100 } = album;
     return (
       <div>
         <Link
@@ -20,9 +20,9 @@ class AlbumInfo extends Component {
         <p>
           { collectionName }
         </p>
-        <p>
+        {/* <p>
           { trackCount }
-        </p>
+        </p> */}
       </div>
     );
   }

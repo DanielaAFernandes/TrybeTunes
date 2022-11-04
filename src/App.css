@@ -15,9 +15,22 @@
   width: 600px;
 }
 
+.artists-result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  width: 400px;
+}
+
 body {
   background-color: #c1dbb3;
   width: 400px;
+}
+
+h2 {
+  color: rgb(53, 140, 53);
 }
 
 .input-artist {

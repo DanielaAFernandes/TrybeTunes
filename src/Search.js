@@ -93,10 +93,10 @@ class Search extends Component {
         {
           (loading === false && listOfArtists.length > 0)
           && (
-            <div>
-              <p>
+            <div className="artists-result">
+              <h2>
                 { `Resultado de álbuns de: ${artist}`}
-              </p>
+              </h2>
               { listOfArtists.map((album) => (
                 <AlbumInfo key={ album.collectionId } album={ album } />
               ))}
