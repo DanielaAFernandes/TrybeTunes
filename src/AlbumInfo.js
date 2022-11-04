@@ -12,17 +12,15 @@ class AlbumInfo extends Component {
         <Link
           to={ `/album/${collectionId}` }
           data-testid={ `link-to-album-${collectionId}` }
-        />
-        <img src={ artworkUrl100 } alt={ collectionName } />
-        <p>
-          { artistName }
-        </p>
-        <p>
-          { collectionName }
-        </p>
-        {/* <p>
-          { trackCount }
-        </p> */}
+        >
+          <img src={ artworkUrl100 } alt={ collectionName } />
+          <p data-testid="artist-name">
+            { artistName }
+          </p>
+          <p data-testid="album-name">
+            { collectionName }
+          </p>
+        </Link>
       </div>
     );
   }

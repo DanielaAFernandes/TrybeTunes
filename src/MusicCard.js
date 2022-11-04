@@ -8,6 +8,7 @@ class MusicCard extends Component {
       <div>
         <p>{trackName}</p>
         <audio
+          className="audio"
           data-testid="audio-component"
           src={ previewUrl }
           controls
