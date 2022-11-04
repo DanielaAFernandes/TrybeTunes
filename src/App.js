@@ -7,6 +7,7 @@ import Favorites from './Favorites';
 import Profile from './Profile';
 import ProfileEdit from './ProfileEdit';
 import NotFound from './NotFound';
+import './App.css';
 
 class App extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class App extends React.Component {
       <BrowserRouter>
         <Switch>
           <div>
-            <h1>Minha homepage</h1>
+            <h1 className="title">Minha homepage</h1>
             <Route exact path="/" component={ Login } />
             <Route path="/search" component={ Search } />
             <Route path="/album/:id" component={ Album } />

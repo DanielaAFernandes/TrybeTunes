@@ -46,18 +46,18 @@ class Login extends Component {
         { loading
           ? <Loading />
           : (
-            <form>
-              <label htmlFor="login-name-input">
-                Insira seu nome
-                <input
-                  type="text"
-                  data-testid="login-name-input"
-                  name="loginName"
-                  value={ loginName }
-                  onChange={ this.enableButton }
-                />
-              </label>
+            <form className="name-form">
+              Insira seu nome:
+              <input
+                className="input-form"
+                type="text"
+                data-testid="login-name-input"
+                name="loginName"
+                value={ loginName }
+                onChange={ this.enableButton }
+              />
               <button
+                className="name-button"
                 type="button"
                 data-testid="login-submit-button"
                 disabled={ isSaveButtonDisabled }

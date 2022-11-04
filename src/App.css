@@ -1,0 +1,78 @@
+.artist-button {
+  background-color: rgb(32, 154, 32);
+  color: beige;
+  font-weight: 400;
+}
+
+.artist-form {
+  background-color: #f2c078;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-left: 10px;
+  padding: 15px;
+  width: 600px;
+}
+
+body {
+  background-color: #c1dbb3;
+  width: 400px;
+};
+
+.input-artist {
+  border: solid black 2px;
+}
+
+.input-form {
+  border: solid black 2px;
+}
+
+.label {
+    color: black;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.loading {
+  color: #fe5d26;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.links {
+  color: #fe5d26;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  width: 250px;
+}
+
+.name-button {
+  background-color: rgb(32, 154, 32);
+  color: beige;
+  font-weight: 400;
+}
+
+.name-form {
+  background-color: #f2c078;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-left: 10px;
+  padding: 15px;
+  width: 400px;
+}
+
+.title {
+  color: #fe5d26;
+  text-align: center;
+  width: 400px;
+};
