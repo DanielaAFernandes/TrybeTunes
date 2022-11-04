@@ -18,7 +18,7 @@
 .artists-result {
   display: flex;
   flex-direction: row;
-  flex-flow:wrap;
+  flex-flow: wrap;
   justify-content: space-between;
   margin-left: 10px;
   width: 400px;
