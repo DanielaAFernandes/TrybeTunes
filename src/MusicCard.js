@@ -40,7 +40,7 @@ class MusicCard extends Component {
     }
     this.setState({
       loading: false,
-      checked: false,
+      checked,
     });
   };
 
