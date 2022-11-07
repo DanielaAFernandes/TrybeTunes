@@ -29,9 +29,27 @@ class Header extends Component {
           ? <Loading />
           : <p className="links" data-testid="header-user-name">{ userName }</p>}
         <div className="links">
-          <Link to="/search" data-testid="link-to-search">Search</Link>
-          <Link to="/favorites" data-testid="link-to-favorites">Favorites</Link>
-          <Link to="/profile" data-testid="link-to-profile">Profile</Link>
+          <Link
+            to="/search"
+            className="each-link"
+            data-testid="link-to-search"
+          >
+            Search
+          </Link>
+          <Link
+            to="/favorites"
+            data-testid="link-to-favorites"
+            className="each-link2"
+          >
+            Favorites
+          </Link>
+          <Link
+            to="/profile"
+            data-testid="link-to-profile"
+            className="each-link3"
+          >
+            Profile
+          </Link>
         </div>
       </div>
     );
