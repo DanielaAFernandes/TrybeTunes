@@ -29,17 +29,6 @@ class Album extends Component {
     });
   };
 
-  // addFavorite = async (song) => {
-  //   const { musicInfo } = this.state;
-  //   const selectedSong = musicInfo.find(({ trackId }) => trackId === song.trackId);
-  //   this.setState({ loading: true });
-  //   if (musicInfo[selectedSong].checked) {
-  //     musicInfo[selectedSong].checked = true;
-  //     await addSong(song);
-  //   }
-  //   this.setState({ loading: false, musicInfo });
-  // };
-
   render() {
     const { musicInfo, loading, albumCover, albumName, artistName } = this.state;
     return (
@@ -61,6 +50,7 @@ class Album extends Component {
                 trackName={ music.trackName }
                 previewUrl={ music.previewUrl }
                 trackId={ music.trackId }
+                songs={ music }
               />
             ))
           }

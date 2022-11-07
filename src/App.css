@@ -42,6 +42,10 @@ body {
   background-color: #c1dbb3;
 }
 
+.favorite {
+  font-size: 15px;
+}
+
 h2 {
   color: rgb(53, 140, 53);
 }
