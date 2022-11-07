@@ -85,7 +85,7 @@ class Search extends Component {
         {
           (loading === false && listOfArtists.length === 0)
           && (
-            <div>
+            <div className="nenhum-album">
               <p>Nenhum álbum foi encontrado</p>
             </div>
           )

@@ -1,3 +1,8 @@
+.artist-album {
+  font-size: 20px;
+  justify-content: center;
+}
+
 .artist-button {
   background-color: rgb(32, 154, 32);
   color: beige;
@@ -5,12 +10,14 @@
 }
 
 .artist-form {
+  align-items: center;
   background-color: #f2c078;
   display: flex;
   flex-direction: row;
   font-size: 20px;
   justify-content: space-around;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px;
   width: 600px;
 }
@@ -19,17 +26,31 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
+}
+
+.audio-preview {
+  align-self: center;
+  font-size: 20px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 body {
   background-color: #c1dbb3;
-  width: 400px;
 }
 
 h2 {
   color: rgb(53, 140, 53);
+}
+
+.image-cd {
+  margin-left: 880px;
+  margin-top: 20px;
+  height: 150px;
+  width: 150px;
 }
 
 .input-artist {
@@ -50,6 +71,7 @@ h2 {
   color: #fe5d26;
   font-size: 50px;
   font-weight: 400;
+  text-align: center;
 }
 
 .links {
@@ -66,6 +88,17 @@ h2 {
   width: 250px;
 }
 
+.name-album {
+  color: red;
+  font-weight: 700;
+  text-align: center;
+}
+
+.name-artist {
+  font-weight: 700;
+  text-align: center;
+}
+
 .name-button {
   background-color: rgb(32, 154, 32);
   color: beige;
@@ -78,13 +111,19 @@ h2 {
   flex-direction: row;
   font-size: 20px;
   justify-content: space-around;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px;
   width: 400px;
 }
 
+.nenhum-album {
+  text-align: center;
+}
+
 .title {
   color: #fe5d26;
+  font-size: 50px;
+  margin-top: 30px;
   text-align: center;
-  width: 400px;
 }

@@ -29,14 +29,15 @@ class Album extends Component {
     });
   };
 
-  // listOfMusics = () => {
-  //   const songs = musics.map((music) => (
-  //     <AlbumInfo
-  //       key={ collectionId }
-  //       musicObj={ music }
-  //     />
-  //   ));
-  //   return songs;
+  // addFavorite = async (song) => {
+  //   const { musicInfo } = this.state;
+  //   const selectedSong = musicInfo.find(({ trackId }) => trackId === song.trackId);
+  //   this.setState({ loading: true });
+  //   if (musicInfo[selectedSong].checked) {
+  //     musicInfo[selectedSong].checked = true;
+  //     await addSong(song);
+  //   }
+  //   this.setState({ loading: false, musicInfo });
   // };
 
   render() {
@@ -45,12 +46,12 @@ class Album extends Component {
       <div data-testid="page-album">
         <Header />
         { loading && <Loading />}
-        <div>
-          <img src={ albumCover } alt={ albumName } />
-          <p data-testid="artist-name">
+        <div className="artist-album">
+          <img className="image-cd" src={ albumCover } alt={ albumName } />
+          <p className="name-artist" data-testid="artist-name">
             {artistName}
           </p>
-          <p data-testid="album-name">
+          <p className="name-album" data-testid="album-name">
             {albumName}
           </p>
           {
@@ -59,6 +60,7 @@ class Album extends Component {
                 key={ music.trackId }
                 trackName={ music.trackName }
                 previewUrl={ music.previewUrl }
+                trackId={ music.trackId }
               />
             ))
           }

@@ -8,18 +8,20 @@ class AlbumInfo extends Component {
     const { artistName, collectionId, collectionName,
       artworkUrl100 } = album;
     return (
-      <div>
+      <div className="artist-album">
         <Link
           to={ `/album/${collectionId}` }
           data-testid={ `link-to-album-${collectionId}` }
         >
-          <img src={ artworkUrl100 } alt={ collectionName } />
-          <p data-testid="artist-name">
-            { artistName }
-          </p>
-          <p data-testid="album-name">
-            { collectionName }
-          </p>
+          <div>
+            <img className="artist-album" src={ artworkUrl100 } alt={ collectionName } />
+            <p data-testid="artist-name">
+              { artistName }
+            </p>
+            <p data-testid="album-name">
+              { collectionName }
+            </p>
+          </div>
         </Link>
       </div>
     );
